@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LessenController">
+   <children>
+      <ImageView fx:id="backButton" fitHeight="60.0" fitWidth="80.0" layoutX="705.0" layoutY="23.0" onMouseClicked="#toHomescreen" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pngkey.com-back-button-png-875502.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="Logout" fitHeight="60.0" fitWidth="80.0" layoutX="711.0" layoutY="447.0" onMouseClicked="#logout" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pngfind.com-logout-button-png-3396821.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label fx:id="huidigeKlant" layoutX="683.0" layoutY="555.0" prefHeight="32.0" prefWidth="100.0" text="Label">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="683.0" layoutY="532.0" text="Ingelogd als:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Line endX="111.5" layoutX="688.0" layoutY="532.0" startX="-17.0" />
+      <Line endX="111.5" endY="-14.0" layoutX="559.0" layoutY="614.0" startX="111.5" startY="-81.5" />
+      <Label layoutX="14.0" layoutY="72.0" text="Lessen inplannen">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="lesKeuze" layoutX="54.0" layoutY="167.0" prefHeight="41.0" prefWidth="178.0" style="-fx-background-color: white;" />
+      <Label layoutX="54.0" layoutY="141.0" text="Soort les" />
+      <Label fx:id="datePicker" layoutX="56.0" layoutY="224.0" text="Datum" />
+      <DatePicker fx:id="datumPicker" layoutX="54.0" layoutY="249.0" prefHeight="41.0" prefWidth="178.0" promptText="Datum invullen" style="-fx-background-color: #63666A;" />
+      <ChoiceBox fx:id="tijdstip" layoutX="54.0" layoutY="340.0" prefHeight="41.0" prefWidth="178.0" style="-fx-background-color: white;" />
+      <Label layoutX="54.0" layoutY="314.0" text="Tijdstip" />
+      <Button fx:id="inplanButton" layoutX="101.0" layoutY="409.0" mnemonicParsing="false" onMouseClicked="#lesButtonPressed" text="Inplannen" />
+      <Line endX="-94.0" endY="-208.0" layoutX="381.0" layoutY="233.0" startX="-94.0" startY="324.0" />
+      <Label layoutX="328.0" layoutY="72.0" text="Lessen">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <TableView fx:id="lesOverzicht" layoutX="328.0" layoutY="108.0" prefHeight="325.0" prefWidth="443.0">
+        <columns>
+          <TableColumn fx:id="lessetjes" prefWidth="75.0" text="Les" />
+          <TableColumn fx:id="Datum" prefWidth="75.0" text="Datum" />
+            <TableColumn fx:id="Tijdstip" prefWidth="75.0" text="Tijdstip" />
+        </columns>
+      </TableView>
+      <Label fx:id="lesInplannenLabel" layoutX="3.0" layoutY="469.0" prefHeight="60.0" prefWidth="277.0" textAlignment="CENTER" textFill="#bc3f3f">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
