@@ -52,8 +52,6 @@ ObservableList<Les> list = FXCollections.observableArrayList(Klant.checkIngelogd
     tijdstip();
 
     }
-
-
     public void lesButtonPressed() throws IOException {
         if(checkTijdstip())
         lesInplannen();

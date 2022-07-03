@@ -11,32 +11,9 @@ public class PianoLes extends Les {
         this.tijdstip = tijdstip;
         this.klant.setBedragTeBetalen(75);
         this.tijdsduurInMinuten = "90";
-    }
-    @Override
-    public String getTijdsduurInMinuten() {
-        return tijdsduurInMinuten;
-    }
-    @Override
-    public Integer getPrijs(){
-        return prijs;
-    }
-    @Override
-    public String getTijdstip() {
-        return this.tijdstip;
-    }
-    @Override
-    public String getLesType(){
-        return this.lesType;
-    }
-    @Override
-    public String getDatum(){
-        return this.datum;
+        this.prijs = 75;
     }
 
-    @Override
-    public Klant getKlant() {
-        return klant;
-    }
 
 }
 

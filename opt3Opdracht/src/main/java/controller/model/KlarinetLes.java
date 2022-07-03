@@ -12,33 +12,11 @@ public class KlarinetLes extends Les {
         this.tijdstip = tijdstip;
         this.klant.setBedragTeBetalen(40);
         this.tijdsduurInMinuten = "45";
+        this.prijs = 40;
 
     }
 
-    @Override
-    public String getTijdsduurInMinuten() {
-        return tijdsduurInMinuten;
-    }
-    @Override
-    public Integer getPrijs(){
-        return prijs;
-    }
-    @Override
-    public String getTijdstip() {
-        return this.tijdstip;
-    }
-    @Override
-    public String getLesType(){
-        return this.lesType;
-    }
-    @Override
-    public String getDatum(){
-        return this.datum;
-    }
-    @Override
-    public Klant getKlant() {
-        return klant;
-    }
+
 }
 
 

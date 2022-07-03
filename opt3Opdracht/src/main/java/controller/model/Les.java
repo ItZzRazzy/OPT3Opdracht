@@ -1,6 +1,6 @@
 package controller.model;
 
-public abstract class Les {
+public class Les {
     String lesType;
     String tijdstip;
     String datum;
@@ -13,12 +13,28 @@ public abstract class Les {
     }
 
 
-    public abstract String getTijdsduurInMinuten();
 
-    public abstract Integer getPrijs();
+    public String getTijdsduurInMinuten() {
+        return tijdsduurInMinuten;
+    }
 
-    public abstract String getTijdstip();
-    public abstract String getLesType();
-    public abstract String getDatum();
-    public abstract Klant getKlant();
+    public Integer getPrijs(){
+        return prijs;
+    }
+
+    public String getTijdstip() {
+        return this.tijdstip;
+    }
+
+    public String getLesType(){
+        return this.lesType;
+    }
+
+    public String getDatum(){
+        return this.datum;
+    }
+
+    public Klant getKlant() {
+        return klant;
+    }
 }
