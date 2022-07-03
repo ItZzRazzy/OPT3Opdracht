@@ -11,29 +11,14 @@ public class DirigentLes extends Les{
         this.datum = datum;
         this.tijdstip = tijdstip;
         this.klant.setBedragTeBetalen(50);
-        this.tijdsduurInMinuten = "60";
-        this.prijs = 50;
-    }
-    @Override
-    public String getTijdsduurInMinuten() {
-        if(this.lesType.equals("Dirigentles")){
-            return tijdsduurInMinuten;
-        }
-        else{
-            return "Verkeerde les";
-        }
+
 
     }
-    @Override
-    public Integer getPrijs(){
-        if(this.lesType.equals("Dirigentles")){
-            return prijs;
-        }
-        else{
-            return null;
-        }
 
-    }
+
+
+
+
     @Override
     public String getTijdstip() {
         if(this.lesType.equals("Dirigentles")){

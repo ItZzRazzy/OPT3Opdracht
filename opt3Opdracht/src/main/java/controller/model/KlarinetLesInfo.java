@@ -12,25 +12,6 @@ public class KlarinetLesInfo extends LesInfo{
         }
 
     }
-
-    @Override
-    void printPrijs() {
-        for (Les l: Account.checkIngelogdeKlant().getLessen()
-        ) {if(l.getLesType().equals("Klarinetles")){
-            setPrijs(l.getPrijs());
-            System.out.println(l.getPrijs() + " euro");}
-        }
-    }
-
-    @Override
-    void printTijdsduurInMinuten() {
-        for (Les l: Account.checkIngelogdeKlant().getLessen()
-        ) {if(l.getLesType().equals("Klarinetles")){
-            setTijdsduurInMinuten(l.getTijdsduurInMinuten());
-            System.out.println(l.getTijdsduurInMinuten() + " minuten");}
-        }
-    }
-
     @Override
     void printDatum() {
         for (Les l: Account.checkIngelogdeKlant().getLessen()

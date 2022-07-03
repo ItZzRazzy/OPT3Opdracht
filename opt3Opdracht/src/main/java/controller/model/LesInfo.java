@@ -11,16 +11,12 @@ public abstract class LesInfo {
     public void lesInfo(){
     printKlant();
     printLesType();
-    printPrijs();
-    printTijdsduurInMinuten();
     printDatum();
     printTijdstip();
     }
 
 
     abstract void printLesType();
-    abstract void printPrijs();
-    abstract void printTijdsduurInMinuten();
     abstract void printDatum();
     abstract void printKlant();
     abstract void printTijdstip();
@@ -38,20 +34,8 @@ this.lesType = lesType;
     public void setKlant(Klant klant) {
         this.klant = klant;
     }
-    public String getTijdsduurInMinuten() {
-        return tijdsduurInMinuten;
-    }
 
-    public void setTijdsduurInMinuten(String tijdsduurInMinuten) {
-        this.tijdsduurInMinuten = tijdsduurInMinuten;
-    }
-    public Integer getPrijs() {
-        return prijs;
-    }
 
-    public void setPrijs(Integer prijs) {
-        this.prijs = prijs;
-    }
     public String getDatum() {
         return datum;
     }

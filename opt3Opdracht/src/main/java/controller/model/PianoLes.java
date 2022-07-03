@@ -10,29 +10,13 @@ public class PianoLes extends Les {
         this.datum = datum;
         this.tijdstip = tijdstip;
         this.klant.setBedragTeBetalen(75);
-        this.tijdsduurInMinuten = "90";
-        this.prijs = 75;
-    }
-    @Override
-    public String getTijdsduurInMinuten() {
-        if(this.lesType.equals("Pianoles")){
-            return tijdsduurInMinuten;
-        }
-        else{
-            return "Verkeerde les";
-        }
 
     }
-    @Override
-    public Integer getPrijs(){
-        if(this.lesType.equals("Pianoles")){
-            return prijs;
-        }
-        else{
-            return null;
-        }
 
-    }
+
+
+
+
     @Override
     public String getTijdstip() {
         if(this.lesType.equals("Pianoles")){

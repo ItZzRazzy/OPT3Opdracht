@@ -12,25 +12,6 @@ public class PianoLesInfo extends LesInfo{
         }
 
     }
-
-    @Override
-    void printPrijs() {
-        for (Les l: Account.checkIngelogdeKlant().getLessen()
-        ) {if(l.getLesType().equals("Pianoles")){
-            setPrijs(l.getPrijs());
-            System.out.println(l.getPrijs() + " euro");}
-        }
-    }
-
-    @Override
-    void printTijdsduurInMinuten() {
-        for (Les l: Account.checkIngelogdeKlant().getLessen()
-        ) {if(l.getLesType().equals("Pianoles")){
-            setTijdsduurInMinuten(l.getTijdsduurInMinuten());
-            System.out.println(l.getTijdsduurInMinuten() + " minuten");}
-        }
-    }
-
     @Override
     void printDatum() {
         for (Les l: Account.checkIngelogdeKlant().getLessen()

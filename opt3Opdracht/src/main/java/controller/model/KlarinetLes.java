@@ -11,31 +11,16 @@ public class KlarinetLes extends Les {
         this.datum = datum;
         this.tijdstip = tijdstip;
         this.klant.setBedragTeBetalen(40);
-        this.tijdsduurInMinuten = "45";
-        this.prijs = 40;
+
 
     }
 
-    @Override
-    public String getTijdsduurInMinuten() {
-        if(this.lesType.equals("Klarinetles")){
-            return tijdsduurInMinuten;
-        }
-        else{
-            return "Verkeerde les";
-        }
 
-    }
-    @Override
-    public Integer getPrijs(){
-        if(this.lesType.equals("Klarinetles")){
-            return prijs;
-        }
-        else{
-            return null;
-        }
 
-    }
+
+
+
+
     @Override
     public String getTijdstip() {
         if(this.lesType.equals("Klarinetles")){
