@@ -35,6 +35,8 @@ public class RegistratieController extends NavigatieController {
             }
         }
 
+
+
         if (accountBestaatAl) {
             System.out.println();
             registratieLabel.setText("Gebruikersnaam is al in gebruik");

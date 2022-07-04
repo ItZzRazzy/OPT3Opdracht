@@ -31,7 +31,7 @@ public void klantLessenTest(){
     klant.setLessen(kLes);
     klant.setLessen(pLes);
     klant.setLessen(dLes);
-    
+
     assertArrayEquals(klant.getLessen().toArray(), kaas.toArray());
     assertEquals(klant.getLessen().get(0).getLesType(), kaas.get(0).getLesType());
 }

@@ -91,30 +91,22 @@ ObservableList<Les> list = FXCollections.observableArrayList(Klant.checkIngelogd
                 if(datumPicker.getValue().toString().equals(l.getDatum())){
                     if(tijdstip.getValue().equals(l.getTijdstip())) {
                         lesInplannenLabel.setText("Les kan niet worden ingeplanned, \n omdat het tijdstip al bezet is.");
-                        return false;
-                    }
+                        return false;}
                 }
             }
-
         }
         lesInplannenLabel.setText("");
         return true;
     }
     public void lesInplannen(){
         String keuze = lesKeuze.getValue();
-
         switch (keuze){
             case "Pianoles":
                 Klant.checkIngelogdeKlant().setLessen(new PianoLes(Klant.checkIngelogdeKlant(),lesKeuze.getValue(), datumPicker.getValue().toString(), tijdstip.getValue()));
-
-
-
                 break;
-
             case "Dirigentles":
                 Klant.checkIngelogdeKlant().setLessen(new DirigentLes(Klant.checkIngelogdeKlant(),lesKeuze.getValue(), datumPicker.getValue().toString(), tijdstip.getValue()));
                 break;
-
             case "Klarinetles":
                 Klant.checkIngelogdeKlant().setLessen(new KlarinetLes(Klant.checkIngelogdeKlant(), lesKeuze.getValue(), datumPicker.getValue().toString(), tijdstip.getValue()));
                 break;

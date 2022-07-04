@@ -59,17 +59,7 @@ public class HomeController extends NavigatieController implements Initializable
         LesInfo lesInfo = new PianoLesInfo();
         lesInfo.lesInfo();
     }
-   // public void printInfo() {
-//            System.out.println(lesInfo.getKlant().getNaam());
-//            System.out.println(lesInfo.getLesType());
-//            System.out.println(lesInfo.getPrijs() + "euro");
-//            System.out.println(lesInfo.getTijdsduurInMinuten() + "minuten");
-//            System.out.println(lesInfo.getDatum());
-//            System.out.println(lesInfo.getTijdstip());
 
-
-
- //   }
 
 }
 

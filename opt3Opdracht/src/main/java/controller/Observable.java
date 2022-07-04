@@ -18,9 +18,17 @@ public class Observable {
 
 
     public void dataNaarSubscribers() {
-        for (Observer o: subscribers
-             ) {
-            o.refresh(Account.checkIngelogdeKlant().isIngelogd());
+        if(Account.checkIngelogdeKlant() != null) {
+            for (Observer o : subscribers
+            ) {
+                o.refresh(Account.checkIngelogdeKlant().isIngelogd());
+            }
+        }
+        else {
+            for (Observer o : subscribers
+            ) {
+                o.refresh(false);
+            }
         }
     }
 

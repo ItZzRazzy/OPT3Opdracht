@@ -46,8 +46,27 @@ public class InlogController extends NavigatieController implements Initializabl
         kanNietInloggen.setVisible(true);
     }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        System.out.println("Klant is uitgelogd");
+        System.out.println("De klant is uitgelogd");
+        System.out.println("De klant is uitgelogd");
     }
 }
